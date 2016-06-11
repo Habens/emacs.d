@@ -9,12 +9,12 @@
   (when (executable-find "sbcl")
     (add-to-list 'slime-lisp-implementations
                  '(sbcl ("sbcl") :coding-system utf-8-unix)))
-  (when (executable-find "lisp")
-    (add-to-list 'slime-lisp-implementations
-                 '(cmucl ("lisp") :coding-system iso-latin-1-unix)))
-  (when (executable-find "ccl")
-    (add-to-list 'slime-lisp-implementations
-                 '(ccl ("ccl") :coding-system utf-8-unix))))
+  ;; (when (executable-find "ecl")
+  ;;   (add-to-list 'slime-lisp-implementations
+  ;;                '(ecl ("ecl") :coding-system utf-8-unix)))
+  )
+
+;;; (setq inferior-lisp-program "/Users/wjchen/Applications/ccl/dx86cl64")
 
 ;; From http://bc.tech.coop/blog/070515.html
 (defun lispdoc ()
